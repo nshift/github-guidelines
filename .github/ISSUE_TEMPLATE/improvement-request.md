@@ -4,7 +4,7 @@ about: Share your point of view and experience on an existing section to help us
 
 ---
 
-> Please fill out this template when filing an issue. It is based on [Excelsior Family Github guidelines](/ExcelsiorFamily/github-guidelines).
+> Please fill out this template when filing an issue. It is based on [Excelsior Family Github guidelines](https://github.com/ExcelsiorFamily/github-guidelines).
 >
 > This template intends to describe what improvement should be addressed for a particular section of the README.
 
