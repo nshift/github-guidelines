@@ -20,5 +20,6 @@ about: Share your point of view and experience on an existing section to help us
 <!-- Include any relevant context. -->
 
 ## Resources :link:
-<!-- List the high-level objectives of this issue. -->
+<!-- List all the resources you used. -->
+<!-- Give credits to authors. If you did not get inspired by others, remove this section. -->
 > Please link the resources you used in order to give credit to authors.
