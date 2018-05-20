@@ -8,7 +8,7 @@ about: Share your point of view and experience on an existing section to help us
 >
 > This template intends to describe what improvement should be addressed for a particular section of the README.
 
-* [ ] I've read, understood, and done my best to follow the [CONTRIBUTING guidelines](CONTRIBUTING.md).
+* [ ] I've read, understood, and done my best to follow the [CONTRIBUTING guidelines](/CONTRIBUTING.md).
 
 ## Which part should be improved?
 <!-- Identify which part should be improved using title name. -->
