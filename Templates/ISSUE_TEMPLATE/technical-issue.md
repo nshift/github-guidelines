@@ -10,17 +10,13 @@ about: Suggest an idea for this project
 
 * [ ] I've read, understood, and done my best to follow the [CONTRIBUTING guidelines](/CONTRIBUTING.md).
 
-## User story
-<!-- 
-	Use Connextra format to describe your user story.
-	Example: As <role>, I want <capability> so that <benefits>.
--->
+## Goals
+<!-- Define goals and context of the issue -->
 
-## Scenarios
-<!-- List the scenarios related to this issue. -->
+## Technical specification
 <!-- 
 	Use BDD format to describe your technical specification.
-	Example: GIVEN <initial states>. WHEN <action>. THEN <expectations>.
+	Example: WHEN <action>. THEN <expectations>.
 -->
 
 ## Attachments
