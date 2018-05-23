@@ -1,6 +1,6 @@
 ---
 name: Enhancement request
-about: Share your point of view and experience on an existing section to help us improve.
+about: Suggest an enhancement on an already existing guideline based on your experience.
 
 ---
 
