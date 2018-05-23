@@ -1,5 +1,5 @@
 ---
-name: Improvement request
+name: Enhancement request
 about: Share your point of view and experience on an existing section to help us improve.
 
 ---
@@ -13,7 +13,6 @@ about: Share your point of view and experience on an existing section to help us
 ## Which part should be improved?
 <!-- Identify which part should be improved using title name. -->
 <!-- Quote the content that should be improved. -->
-> Please use title name and quote, if necessary, the content that should be improved.
 
 ## Goals :soccer:
 <!-- List the high-level objectives of this issue. -->
@@ -22,4 +21,3 @@ about: Share your point of view and experience on an existing section to help us
 ## Resources :link:
 <!-- List all the resources you used. -->
 <!-- Give credits to authors. If you did not get inspired by others, remove this section. -->
-> Please link the resources you used in order to give credit to authors.
