@@ -123,6 +123,18 @@ Labels should be regrouped into categories. Only three of them are needed.
 *Why*
 >Categories help identify what label to assign to an issue. Each issue cannot have more than one label from the same category.
 
+Labels should have the following format `Category: Name`.
+
+*Why*
+>Having this format allows to be explicit about the category of the label. Also, GitHub orders labels aphabetically, so following this format allows to keep categories dislayed in the same order accross every issues.
+
+**Preferred:**
+`Type: Bug`
+
+**Not Preferred:**
+`Bug`
+
+
 Every issue should have a `Type` and a `Severity` label.
 
 *Why*
