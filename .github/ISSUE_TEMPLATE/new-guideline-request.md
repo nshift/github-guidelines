@@ -17,4 +17,3 @@ about: Suggest a new Github guideline
 ## Resources :link:
 <!-- List all the resources you used. -->
 <!-- Give credits to authors. If you did not get inspired by others, remove this section. -->
-> Please link the resources you used in order to give credit to authors.

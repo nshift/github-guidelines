@@ -13,6 +13,5 @@
 <!-- List the high-level objectives of this issue. -->
 <!-- Include any relevant context. -->
 
-## Resources :link:
-<!-- List all the resources you used. -->
-<!-- Give credits to authors. If you did not get inspired by others, remove this section. -->
+## Expectation
+<!-- Describe your expectation. -->
