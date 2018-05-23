@@ -95,17 +95,40 @@ Templates should promote a high contribution quality by referring [contributing 
 
 ## Milestone
 
-## Label
+## Labels
 
-We believe GitHub labels should define immutable informations about issues. 
+### Immutablity
 
-We consider having to change labels over time to be a bad practice. Indeed, changing labels manually multiple times on issues can be very time consumming and prone to errors. Moreover, we believe that if the information about the issue is changing, it is surely not a relevant information to have as a label. Almost everytime, you will see that variable informations about an issue can be managed in another way which will be much more efficient in the end. If you consider this, you will tremendously reduce useless labels creation, and see that you have more than enough information through it. 
+GitHub labels should define immutable informations about issues.
 
-We believe that labels should be regrouped into categories and that you only need three of them. We also recommend to use similar color styling accross categories for a stronger visual identification.
-Here are what we believe to be the best labels to use and what they mean. 
-We recommend to use the label name, color hex code as they are and use the rest as the description.
+*Why* 
+>Having to change labels over time is a bad practice. Indeed, changing labels manually multiple times on issues can be very time consumming and prone to errors. Moreover, if the information about the issue is changing, it is surely not a relevant information to have as a label. Almost everytime, any variable information about an issue can be managed in another way which will be much more efficient in the end. Considering this will tremendously reduce useless labels creation. 
 
-### Type
+### Colors
+
+It is better to use similar color styling accross categories for a stronger visual identification.
+
+*Why*
+>Keeping same color styling accross categories is key for a strong and clear visual identification.
+
+Colors should be variants of Red-Orange-Green.
+
+*Why*
+>Red-Orange-Green variations are commonly used internationally to provide a sense of state. Red being the ones that require the most attention. Green being the ones that require little attention.
+
+### Categories
+
+Labels should be regrouped into categories. Only three of them are needed.
+
+*Why*
+>Categories help identify what label to assign to an issue. Each issue cannot have more than one label from the same category.
+
+Every issue should have a `Type` and a `Severity` label.
+
+*Why*
+>Having the same labels on every issue helps for visual consistency. Also, these are necessary informations for any issue.
+
+#### Type
 
 Type labels should be used to define the type of task done inside the issue.
 
@@ -121,7 +144,7 @@ The issue is a suggestion of enhancement to your project.
 - `Type: Documentation` **#c3b2ef**
 The issue is the creation or refinement of a document.
 
-### Severity
+#### Severity
 
 Severity labels are mostly used for bug-related issues. It allows to identify the critical aspects of the work implied inside the issue.
 
@@ -143,7 +166,7 @@ The issue reports cosmetic items, formatting, spelling, colors, etc.
 - `Severity: Low` **#c3b2ef**
 The issue concerns a new feature or any addition to the project.
 
-### Type of change
+#### Type of change
 
 Type of change labels are only used for pull requests. They give information about the effort needed to review a pull request. We strongly recommend to define core areas to help define the estimated effort.
 
