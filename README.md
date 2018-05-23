@@ -97,6 +97,68 @@ Templates should promote a high contribution quality by referring [contributing 
 
 ## Label
 
+We believe GitHub labels should define immutable informations about issues. 
+
+We consider having to change labels over time to be a bad practice. Indeed, changing labels manually multiple times on issues can be very time consumming and prone to errors. Moreover, we believe that if the information about the issue is changing, it is surely not a relevant information to have as a label. Almost everytime, you will see that variable informations about an issue can be managed in another way which will be much more efficient in the end. If you consider this, you will tremendously reduce useless labels creation, and see that you have more than enough information through it. 
+
+We believe that labels should be regrouped into categories and that you only need three of them. We also recommend to use similar color styling accross categories for a stronger visual identification.
+Here are what we believe to be the best labels to use and what they mean. 
+We recommend to use the label name, color hex code as they are and use the rest as the description.
+
+### Type
+
+Type labels should be used to define the type of task done inside the issue.
+
+- `Type: Feature` **#00cc41**
+The issue is the development of a new feature of your project.
+
+- `Type: Bug` **#ff0000**
+The issue is an identified bug that needs to be fixed.
+
+- `Type: Enhancement` **#ffe700**
+The issue is a suggestion of enhancement to your project.
+
+- `Type: Documentation` **#c3b2ef**
+The issue is the creation or refinement of a document.
+
+### Severity
+
+Severity labels are mostly used for bug-related issues. It allows to identify the critical aspects of the work implied inside the issue.
+
+- `Severity: Blocker`**#ff0000**
+The issue is blocking an impending release.
+
+- `Severity: Critical` **#ff4000**
+The issue causes data loss, crashes or hangs salt processes, makes the system unresponsive, etc.
+
+- `Severity: High` **#ff8100**
+The issue reports incorrect functionality, bad functionality, a confusing user experience, etc.
+
+- `Severity: Strong` **#ffe700**
+The issue concerns changes to the core areas of the project.
+
+- `Severity: Medium` **#00cc41**
+The issue reports cosmetic items, formatting, spelling, colors, etc.
+
+- `Severity: Low` **#c3b2ef**
+The issue concerns a new feature or any addition to the project.
+
+### Type of change
+
+Type of change labels are only used for pull requests. They give information about the effort needed to review a pull request. We strongly recommend to define core areas to help define the estimated effort.
+
+- `Change: Minor` **#c3b2ef**
+Less than 64 lines changed, or less than 8 core lines changed.
+
+- `Change: Medium` **#00cc41**
+Less than 256 lines changed, or less than 64 core lines changed.
+
+- `Change: Master` **#ffe700**
+More than 256 lines changed, or more than 64 core lines changed.
+
+- `Change: Expert`**#ff0000**
+Needs specialized, in-depth review.
+
 ## CHANGELOG
 
 ## CONTRIBUTING.md
