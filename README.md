@@ -95,6 +95,24 @@ Templates should promote a high contribution quality by referring [contributing 
 
 ## Milestone
 
+A Milestone should correspond to a project delivery.
+Every GitHub issue should be assigned to a Milestone.
+
+*Why*
+>Milestones allow to group issues and prioritize them. This can only be done inside a Milestone. It is recognized as a good practice to manage issues for your project inside a Milestone. Milestones allow you to follow overall progress based on closed/opened issues.
+
+Every Milestone should have a due date.
+
+*Why*
+>Milestones with no due date are reducing the team's productivity as it does not set a clear goal for the project.
+
+A Milestone should only be closed when progress is at 100%, meaning that all issues and pull requests related to it are closed. If you do not consider an issue to be necessarily closed to finish your Milestone then it should be moved to another one.
+
+*Why*
+>Milestones are often associated with a release of a project. It should be compulsory to have all issues done before releasing a new version of your project. Milestones are also a great way to create [Changelogs](#changelog) which requires to be consitent with Milestones management.
+
+
+
 ## Label
 
 ## CHANGELOG
