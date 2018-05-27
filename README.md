@@ -95,23 +95,65 @@ Templates should promote a high contribution quality by referring [contributing 
 
 ## Milestone
 
-A Milestone should correspond to a project delivery.
-Every GitHub issue should be assigned to a Milestone.
+Milestones should be based on iterative development and produce incremental builds. It enforces Agile methodology and promote continuous integration and deployment. It allows you to follow overall progress and create [changelogs](#changelog) based on opened/closed issues.
 
-*Why*
->Milestones allow to group issues and prioritize them. This can only be done inside a Milestone. It is recognized as a good practice to manage issues for your project inside a Milestone. Milestones allow you to follow overall progress based on closed/opened issues.
+### Incremental Title
 
-Every Milestone should have a due date.
+Milestones should be described as increment based on software version.
 
-*Why*
->Milestones with no due date are reducing the team's productivity as it does not set a clear goal for the project.
+**Preferred:**
+```markdown
+Milestones:
 
-A Milestone should only be closed when progress is at 100%, meaning that all issues and pull requests related to it are closed. If you do not consider an issue to be necessarily closed to finish your Milestone then it should be moved to another one.
+- 1.1.0
+- 1.2.0
+- 1.3.0
+- 1.4.0
+```
 
-*Why*
->Milestones are often associated with a release of a project. It should be compulsory to have all issues done before releasing a new version of your project. Milestones are also a great way to create [Changelogs](#changelog) which requires to be consitent with Milestones management.
+**Not Preferred:**
+```markdown
+Milestones:
 
+- Backlog
+- Ice Box
+- Release 1.0
+- Release 2.0
+```
 
+*Pro tip*: when closing a milestone, a git tag using software version should be created.
+
+### Short Iterative Due Date
+
+**Milestones must have short due dates to define small increment** and should only be closed when progress is at 100%, meaning that all issues and pull requests related to it are closed. If you do not consider an issue to be necessarily closed to finish your current milestone then it should be moved to another one.
+
+**Preferred:**
+```markdown
+Milestones:
+
+- 1.1.0 - Closed 4 weeks ago
+- 1.2.0 - Closed 2 weeks ago
+- 1.3.0 - Closed 1 day ago
+- 1.4.0 - Due by June 8, 2018
+```
+
+**Not Preferred:**
+```markdown
+Milestones:
+
+- Backlog - No due date
+- Ice Box - No due date
+- Version 1.0 - Due by September 1, 2019
+- Version 2.0 - Due by September 1, 2022
+```
+
+*Pro tip*: when closing a milestone, webhooks can be used to automatically create a release flow.
+
+### Github Issue And Pull Request Priority
+
+Milestones should drive development for contributors and help them to focus on most priority issues and pull requests. Priorization should be based on comparaison and it's up to maintainers.
+
+*Pro tip*: [labels](#label) should help maintainers to compare issues and pull requests easily.
 
 ## Label
 
