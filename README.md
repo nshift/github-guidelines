@@ -99,46 +99,69 @@ Templates should promote a high contribution quality by referring [contributing 
 
 ### Immutablity
 
-GitHub labels should define immutable informations about issues.
+GitHub labels should define immutable informations about issues, in order to avoid non-updating scenarios. States should be defined in project section.
 
-*Why* 
->Having to change labels over time is a bad practice. Indeed, changing labels manually multiple times on issues can be very time consumming and prone to errors. Moreover, if the information about the issue is changing, it is surely not a relevant information to have as a label. Almost everytime, any variable information about an issue can be managed in another way which will be much more efficient in the end. Considering this will tremendously reduce useless labels creation. 
+**Preferred:**
+```markdown
+- type
+- severity
+```
+
+**Not Preferred:**
+```markdown
+- priority
+- status
+```
 
 ### Colors
 
-It is better to use similar color styling accross categories for a stronger visual identification.
+Colors should be variants of Red-Orange-Green to provide a sense of state. It is better to use similar color styling accross categories for a stronger visual identification. Red being the ones that require the most attention. Green being the ones that require little attention.
 
-*Why*
->Keeping same color styling accross categories is key for a strong and clear visual identification.
+**Preferred:**
+```markdown
+- `Severity: Low`: green
+- `Severity: Medium`: orange
+- `Severity: Critical`: red
+- `Change: Minor`: green
+- `Change: Medium`: orange
+- `Change: Master`: red
+```
 
-Colors should be variants of Red-Orange-Green.
-
-*Why*
->Red-Orange-Green variations are commonly used internationally to provide a sense of state. Red being the ones that require the most attention. Green being the ones that require little attention.
+**Not Preferred:**
+```markdown
+- `Severity: Low`: blue
+- `Severity: Medium`: blue
+- `Severity: Critical`: blue
+- `Change: Minor`: green
+- `Change: Medium`: green
+- `Change: Master`: green
+```
 
 ### Categories
 
-Labels should be regrouped into categories. Only three of them are needed.
-
-*Why*
->Categories help identify what label to assign to an issue. Each issue cannot have more than one label from the same category.
-
-Labels should have the following format `Category: Name`.
-
-*Why*
->Having this format allows to be explicit about the category of the label. Also, GitHub orders labels aphabetically, so following this format allows to keep categories dislayed in the same order accross every issues.
+Labels should help reviewers to quickly get information about the reviewing effort. Labels should be categorized to provide the same amount of information for each issue. Issues cannot have more than one label from the same category.
 
 **Preferred:**
-`Type: Bug`
+```markdown
+- `Severity: Low`
+- `Severity: Medium`
+- `Severity: Critical`
+- `Change: Minor`
+- `Change: Medium`
+- `Change: Master`
+```
 
 **Not Preferred:**
-`Bug`
+```markdown
+- `Low`
+- `Medium`
+- `Critical`
+- `Blocked`
+- `Feature`
+- `WorkInProgress`
+```
 
-
-Every issue should have a `Type` and a `Severity` label.
-
-*Why*
->Having the same labels on every issue helps for visual consistency. Also, these are necessary informations for any issue.
+*Pro tip:* GitHub orders labels aphabetically, so following this format allows to keep categories dislayed in the same order accross every issues.
 
 #### Type
 
