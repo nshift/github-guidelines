@@ -99,71 +99,161 @@ Templates should promote a high contribution quality by referring [contributing 
 
 ### Immutablity
 
-GitHub labels should define immutable informations about issues, in order to avoid non-updating scenarios. States should be defined in project section.
+GitHub labels should define immutable informations about issues. States should be defined in project section.
 
-**Preferred:**
+*Why*
+>To avoid non-updated scenarios.
+
+#### Examples
+
+<details>
+<summary>Excelsior Approved</summary>
+
 ```markdown
 - type
 - severity
 ```
 
-**Not Preferred:**
+</details>
+<details>
+<summary>Not Recommended</summary>
+
 ```markdown
 - priority
 - status
 ```
 
+</details>
+
 ### Colors
 
-Colors should be variants of Red-Orange-Green to provide a sense of state. It is better to use similar color styling accross categories for a stronger visual identification. Red being the ones that require the most attention. Green being the ones that require little attention.
+It is better to use similar color styling accross categories for a stronger visual identification. Colors should be variants of Red-Orange-Green to provide a sense of state. Red being the ones that require the most attention. Green being the ones that require little attention.
 
-**Preferred:**
+*Why*
+>Red-Orange-Green variations are commonly used internationally to provide a sense of state. Keeping same color styling accross categories is key for a strong and clear visual identification.
+
+**Excelsior Format:**
+
+```markdown
+- `Low`: green
+- `Medium`: orange
+- `Critical`: red
+```
+
+#### Examples
+
+<details>
+<summary>Excelsior Approved</summary>
+
 ```markdown
 - `Severity: Low`: green
+```
+```markdown
 - `Severity: Medium`: orange
+```
+```markdown
 - `Severity: Critical`: red
+```
+```markdown
 - `Change: Minor`: green
+```
+```markdown
 - `Change: Medium`: orange
+```
+```markdown
 - `Change: Master`: red
 ```
 
-**Not Preferred:**
+</details>
+<details>
+<summary>Not Recommended</summary>
+
 ```markdown
 - `Severity: Low`: blue
+```
+```markdown
 - `Severity: Medium`: blue
+```
+```markdown
 - `Severity: Critical`: blue
+```
+```markdown
 - `Change: Minor`: green
+```
+```markdown
 - `Change: Medium`: green
+```
+```markdown
 - `Change: Master`: green
 ```
 
+</details>
+
 ### Categories
 
-Labels should help reviewers to quickly get information about the reviewing effort. Labels should be categorized to provide the same amount of information for each issue. Issues cannot have more than one label from the same category.
+Labels should help reviewers to quickly get information about the reviewing effort. Labels should be regrouped into categories. Issues cannot have more than one label from the same category.
 
-**Preferred:**
+*Why*
+>To provide the consistent information for every issue.
+
+**Excelsior Format:**
+
+```markdown
+- `Caterogy: Type`
+```
+
+#### Examples
+
+<details>
+<summary>Excelsior Approved</summary>
+
 ```markdown
 - `Severity: Low`
+```
+```markdown
 - `Severity: Medium`
+```
+```markdown
 - `Severity: Critical`
+```
+```markdown
 - `Change: Minor`
+```
+```markdown
 - `Change: Medium`
+```
+```markdown
 - `Change: Master`
 ```
 
-**Not Preferred:**
+</details>
+<details>
+<summary>Not Recommended</summary>
+
 ```markdown
 - `Low`
+```
+```markdown
 - `Medium`
+```
+```markdown
 - `Critical`
+```
+```markdown
 - `Blocked`
+```
+```markdown
 - `Feature`
+```
+```markdown
 - `WorkInProgress`
 ```
 
+</details>
+
 *Pro tip:* GitHub orders labels aphabetically, so following this format allows to keep categories dislayed in the same order accross every issues.
 
-#### Type
+#### Type Category
 
 Type labels should be used to define the type of task done inside the issue.
 
@@ -179,7 +269,7 @@ The issue is a suggestion of enhancement to your project.
 - `Type: Documentation` **#c3b2ef**
 The issue is the creation or refinement of a document.
 
-#### Severity
+#### Severity Category
 
 Severity labels are mostly used for bug-related issues. It allows to identify the critical aspects of the work implied inside the issue.
 
@@ -201,7 +291,7 @@ The issue reports cosmetic items, formatting, spelling, colors, etc.
 - `Severity: Low` **#c3b2ef**
 The issue concerns a new feature or any addition to the project.
 
-#### Type of change
+#### Type Of Change Category
 
 Type of change labels are only used for pull requests. They give information about the effort needed to review a pull request. We strongly recommend to define core areas to help define the estimated effort.
 
