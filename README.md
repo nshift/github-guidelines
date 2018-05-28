@@ -132,7 +132,7 @@ It is better to use similar color styling accross categories for a stronger visu
 *Why*
 >Red-Orange-Green variations are commonly used internationally to provide a sense of state. Keeping same color styling accross categories is key for a strong and clear visual identification.
 
-**Excelsior Format:**
+#### Excelsior Format
 
 ```markdown
 - `Low`: green
@@ -196,7 +196,7 @@ Labels should help reviewers to quickly get information about the reviewing effo
 *Why*
 >To provide the consistent information for every issue.
 
-**Excelsior Format:**
+#### Excelsior Format
 
 ```markdown
 - `Caterogy: Type`
@@ -250,6 +250,7 @@ Labels should help reviewers to quickly get information about the reviewing effo
 ```
 
 </details>
+
 
 *Pro tip:* GitHub orders labels aphabetically, so following this format allows to keep categories dislayed in the same order accross every issues.
 
