@@ -99,213 +99,120 @@ Templates should promote a high contribution quality by referring [contributing 
 
 ### Immutablity
 
-GitHub labels should define immutable informations about issues. States should be defined in project section.
+GitHub labels should define immutable informations about issues, in order to avoid non-updating scenarios. States should be defined in project section.
 
-*Why*
->To avoid non-updated scenarios.
-
-#### Examples
-
-<details>
-<summary>Excelsior Approved</summary>
-
+**Preferred:**
 ```markdown
 - type
 - severity
 ```
 
-</details>
-<details>
-<summary>Not Recommended</summary>
-
+**Not Preferred:**
 ```markdown
 - priority
 - status
 ```
 
-</details>
-
 ### Colors
 
-It is better to use similar color styling accross categories for a stronger visual identification. Colors should be variants of Red-Orange-Green to provide a sense of state. Red being the ones that require the most attention. Green being the ones that require little attention.
+Colors should be variants of Red-Orange-Green to provide a sense of state. It is better to use similar color styling accross categories for a stronger visual identification. Red being the ones that require the most attention. Green being the ones that require little attention.
 
-*Why*
->Red-Orange-Green variations are commonly used internationally to provide a sense of state. Keeping same color styling accross categories is key for a strong and clear visual identification.
+**Preferred:**
 
-#### Excelsior Format
+- `Severity: Low`: ![#c3b2ef](https://placehold.it/15/c3b2ef/000000?text=+)
+- `Severity: Medium`: ![#00cc41](https://placehold.it/15/00cc41/000000?text=+)
+- `Severity: Critical`: ![#ffe700](https://placehold.it/15/ffe700/000000?text=+)
+- `Change: Minor`: ![#c3b2ef](https://placehold.it/15/c3b2ef/000000?text=+)
+- `Change: Medium`: ![#00cc41](https://placehold.it/15/00cc41/000000?text=+)
+- `Change: Master`: ![#ffe700](https://placehold.it/15/ffe700/000000?text=+)
 
-```markdown
-- `Low`: green
-- `Medium`: orange
-- `Critical`: red
-```
+**Not Preferred:**
 
-#### Examples
-
-<details>
-<summary>Excelsior Approved</summary>
-
-```markdown
-- `Severity: Low`: green
-```
-```markdown
-- `Severity: Medium`: orange
-```
-```markdown
-- `Severity: Critical`: red
-```
-```markdown
-- `Change: Minor`: green
-```
-```markdown
-- `Change: Medium`: orange
-```
-```markdown
-- `Change: Master`: red
-```
-
-</details>
-<details>
-<summary>Not Recommended</summary>
-
-```markdown
-- `Severity: Low`: blue
-```
-```markdown
-- `Severity: Medium`: blue
-```
-```markdown
-- `Severity: Critical`: blue
-```
-```markdown
-- `Change: Minor`: green
-```
-```markdown
-- `Change: Medium`: green
-```
-```markdown
-- `Change: Master`: green
-```
-
-</details>
+- `Severity: Low`: ![#c3b2ef](https://placehold.it/15/c3b2ef/000000?text=+)
+- `Severity: Medium`: ![#c3b2ef](https://placehold.it/15/c3b2ef/000000?text=+)
+- `Severity: Critical`: ![#c3b2ef](https://placehold.it/15/c3b2ef/000000?text=+)
+- `Change: Minor`: ![#00cc41](https://placehold.it/15/00cc41/000000?text=+)
+- `Change: Medium`: ![#00cc41](https://placehold.it/15/00cc41/000000?text=+)
+- `Change: Master`: ![#00cc41](https://placehold.it/15/00cc41/000000?text=+)
 
 ### Categories
 
-Labels should help reviewers to quickly get information about the reviewing effort. Labels should be regrouped into categories. Issues cannot have more than one label from the same category.
+Labels should help reviewers to quickly get information about the reviewing effort. Labels should be categorized to provide the same amount of information for each issue. Issues cannot have more than one label from the same category.
 
-*Why*
->To provide the consistent information for every issue.
-
-#### Excelsior Format
-
-```markdown
-- `Caterogy: Type`
-```
-
-#### Examples
-
-<details>
-<summary>Excelsior Approved</summary>
-
+**Preferred:**
 ```markdown
 - `Severity: Low`
-```
-```markdown
 - `Severity: Medium`
-```
-```markdown
 - `Severity: Critical`
-```
-```markdown
 - `Change: Minor`
-```
-```markdown
 - `Change: Medium`
-```
-```markdown
 - `Change: Master`
 ```
 
-</details>
-<details>
-<summary>Not Recommended</summary>
-
+**Not Preferred:**
 ```markdown
 - `Low`
-```
-```markdown
 - `Medium`
-```
-```markdown
 - `Critical`
-```
-```markdown
 - `Blocked`
-```
-```markdown
 - `Feature`
-```
-```markdown
 - `WorkInProgress`
 ```
 
-</details>
-
-
 *Pro tip:* GitHub orders labels aphabetically, so following this format allows to keep categories dislayed in the same order accross every issues.
 
-#### Type Category
+#### Type
 
 Type labels should be used to define the type of task done inside the issue.
 
-- `Type: Feature` **#00cc41**
+- `Type: Feature` ![#00cc41](https://placehold.it/15/00cc41/000000?text=+)
 The issue is the development of a new feature of your project.
 
-- `Type: Bug` **#ff0000**
+- `Type: Bug` ![#ff0000](https://placehold.it/15/ff0000/000000?text=+)
 The issue is an identified bug that needs to be fixed.
 
-- `Type: Enhancement` **#ffe700**
+- `Type: Enhancement` ![#ffe700](https://placehold.it/15/ffe700/000000?text=+)
 The issue is a suggestion of enhancement to your project.
 
-- `Type: Documentation` **#c3b2ef**
+- `Type: Documentation` ![#c3b2ef](https://placehold.it/15/c3b2ef/000000?text=+)
 The issue is the creation or refinement of a document.
 
-#### Severity Category
+#### Severity
 
 Severity labels are mostly used for bug-related issues. It allows to identify the critical aspects of the work implied inside the issue.
 
-- `Severity: Blocker`**#ff0000**
+- `Severity: Blocker` ![#000000](https://placehold.it/15/000000/000000?text=+)
 The issue is blocking an impending release.
 
-- `Severity: Critical` **#ff4000**
+- `Severity: Critical` ![#ff4000](https://placehold.it/15/ff4000/000000?text=+)
 The issue causes data loss, crashes or hangs salt processes, makes the system unresponsive, etc.
 
-- `Severity: High` **#ff8100**
+- `Severity: High` ![#ff8100](https://placehold.it/15/ff8100/000000?text=+)
 The issue reports incorrect functionality, bad functionality, a confusing user experience, etc.
 
-- `Severity: Strong` **#ffe700**
+- `Severity: Strong` ![#ffe700](https://placehold.it/15/ffe700/000000?text=+)
 The issue concerns changes to the core areas of the project.
 
-- `Severity: Medium` **#00cc41**
+- `Severity: Medium` ![#00cc41](https://placehold.it/15/00cc41/000000?text=+)
 The issue reports cosmetic items, formatting, spelling, colors, etc.
 
-- `Severity: Low` **#c3b2ef**
+- `Severity: Low` ![#c3b2ef](https://placehold.it/15/c3b2ef/000000?text=+)
 The issue concerns a new feature or any addition to the project.
 
-#### Type Of Change Category
+#### Type of change
 
 Type of change labels are only used for pull requests. They give information about the effort needed to review a pull request. We strongly recommend to define core areas to help define the estimated effort.
 
-- `Change: Minor` **#c3b2ef**
+- `Change: Minor` ![#c3b2ef](https://placehold.it/15/c3b2ef/000000?text=+)
 Less than 64 lines changed, or less than 8 core lines changed.
 
-- `Change: Medium` **#00cc41**
+- `Change: Medium` ![#00cc41](https://placehold.it/15/00cc41/000000?text=+)
 Less than 256 lines changed, or less than 64 core lines changed.
 
-- `Change: Master` **#ffe700**
+- `Change: Master` ![#ffe700](https://placehold.it/15/ffe700/000000?text=+)
 More than 256 lines changed, or more than 64 core lines changed.
 
-- `Change: Expert`**#ff0000**
+- `Change: Expert` ![#ff0000](https://placehold.it/15/ff0000/000000?text=+)
 Needs specialized, in-depth review.
 
 ## CHANGELOG
