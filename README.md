@@ -10,6 +10,7 @@ These guidelines are based on [Building a strong community Github documentation]
 	* [Multiple Issue Templates Over Single Issue Template](#multiple-issue-template-over-single-issue-template)
 	* [Issue & Pull Request Expectation](#issue--pull-request-expectation)
 	* [Promoting A High Contribution Quality](#promoting-a-high-contribution-quality)
+	* [Git Commit Messages](#git-commit-messages)
 * [Milestone](#milestone)
 * [Label](#label)
 * [CHANGELOG](#changelog)
@@ -92,6 +93,58 @@ Templates should promote a high contribution quality by referring [contributing 
 
 ...
 ```
+
+### Git Commit Messages
+
+#### Content
+
+Git Commit messages should always be clear about what has been done. It should be written at the present tense and imperative Mood.
+
+**Preferred:**
+```markdown
+- Add get user feature.
+- Update navigation storyboard.
+```
+
+**Not Preferred:**
+```markdown
+- Added get user feature.
+- Updates navigation storyboard.
+```
+
+#### Reference
+
+Git Commit messages should reference issues at the end.
+
+**Preferred:**
+```markdown
+- Improve cache management. Related to #42.
+- Remove unused ViewController method. Related to #1024.
+```
+
+**Not Preferred:**
+```markdown
+- Improve cache management.
+- #1024 Remove unused ViewController method.
+```
+
+#### Emojis
+
+For clear visual identification start the commit message with an applicable emoji:
+
+    * :art: `:art:` when improving the format/structure of the code
+    * :racehorse: `:racehorse:` when improving performance
+    * :non-potable_water: `:non-potable_water:` when plugging memory leaks
+    * :memo: `:memo:` when writing docs
+    * :bug: `:bug:` when fixing a bug
+    * :fire: `:fire:` when removing code or files
+    * :green_heart: `:green_heart:` when fixing the CI build
+    * :white_check_mark: `:white_check_mark:` when adding tests
+    * :lock: `:lock:` when dealing with security
+    * :arrow_up: `:arrow_up:` when upgrading dependencies
+    * :arrow_down: `:arrow_down:` when downgrading dependencies
+    * :shirt: `:shirt:` when removing linter warnings
+
 
 ## Milestone
 
