@@ -99,7 +99,7 @@ Templates should promote a high contribution quality by referring [contributing 
 
 ### Immutablity
 
-GitHub labels should define immutable informations about issues, in order to avoid non-updating scenarios. States should be defined in project section.
+GitHub labels should define immutable informations about issues, in order to avoid non-updated scenarios. States should be defined in project section.
 
 **Preferred:**
 ```markdown
@@ -115,7 +115,7 @@ GitHub labels should define immutable informations about issues, in order to avo
 
 ### Colors
 
-Colors should be variants of Red-Orange-Green to provide a sense of state. It is better to use similar color styling accross categories for a stronger visual identification. Red being the ones that require the most attention. Green being the ones that require little attention.
+It is better to use similar color styling accross categories for a consistent and stronger visual identification. Colors should be variants of Red-Orange-Green to provide a sense of state. Red being the ones that require the most attention. Green being the ones that require little attention.
 
 **Preferred:**
 
@@ -133,7 +133,7 @@ Colors should be variants of Red-Orange-Green to provide a sense of state. It is
 
 ### Categories
 
-Labels should help reviewers to quickly get information about the reviewing effort. Labels should be categorized to provide the same amount of information for each issue. Issues cannot have more than one label from the same category.
+Labels should help reviewers to quickly get information about the reviewing effort. Labels should be regrouped into categories to provide consistent information about every issue. Issues cannot have more than one label from the same category.
 
 **Preferred:**
 ```markdown
