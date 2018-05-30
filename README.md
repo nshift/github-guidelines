@@ -159,3 +159,5 @@ Emojis should help reviewers to quickly and visually identify the nature of the 
 ## CONTRIBUTING.md
 
 ## Resources
+
+- [Atom CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
