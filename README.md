@@ -190,6 +190,6 @@ Type of change labels are only used for pull requests. They give information abo
 
 ## Resources
 
-- The Official raywenderlich.com Swift Style Guide.[GitHub](https://github.com/raywenderlich/swift-style-guide/blob/master/README.markdown)
-- Sane GitHub Labels. [Medium](https://medium.com/@dave_lunny/sane-github-labels-c5d2e6004b63)
-- GitHub Labels and Milestones. [Saltstack](https://docs.saltstack.com/en/2017.7/topics/development/labels.html)
+- [The Official raywenderlich.com Swift Style Guide](https://github.com/raywenderlich/swift-style-guide/blob/master/README.markdown).
+- [Sane GitHub Labels](https://medium.com/@dave_lunny/sane-github-labels-c5d2e6004b63).
+- [GitHub Labels and Milestones](https://docs.saltstack.com/en/2017.7/topics/development/labels.html).
