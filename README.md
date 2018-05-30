@@ -19,6 +19,12 @@ These guidelines are based on [Building a strong community Github documentation]
 	* [Short Iterative Due Date](#short-iterative-due-date)
 	* [Github Issue And Pull Request Priority](#github-issue-and-pull-request-priority)
 * [Label](#label)
+	* [Immutablity](#immutablity)
+	* [Colors](#colors)
+	* [Categories](#categories)
+		* [Type](#type)
+		* [Severity](#severity)
+		* [Type Of Change](#type-of-change)
 * [CHANGELOG](#changelog)
 * [CONTRIBUTING.md](#contributingmd)
 * [Resources](#resources)
@@ -293,7 +299,7 @@ Severity labels are mostly used for bug-related issues. It allows to identify th
 - ![#00cc41](https://placehold.it/15/00cc41/000000?text=+) (**#00cc41**) `Severity: Medium`: The issue reports cosmetic items, formatting, spelling, colors, etc
 - ![#c3b2ef](https://placehold.it/15/c3b2ef/000000?text=+) (**#c3b2ef**) `Severity: Low`: The issue concerns a new feature or any addition to the project.
 
-#### Type of change
+#### Type Of Change
 
 Type of change labels are only used for pull requests. They give information about the effort needed to review a pull request:
 
