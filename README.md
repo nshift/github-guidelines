@@ -99,9 +99,11 @@ Templates should promote a high contribution quality by referring [contributing 
 
 ## Git Commit Messages
 
+Git commit messages should help reviewers to do better reviews.
+
 ### Short Commit Messages
 
-Git commit messages should help reviewers to quickly understand what has been done. It should be short, clear and written at the present tense and imperative mood.
+Short commit messages should help reviewers to quickly understand what has been done. It should be short, clear and written at the present tense and imperative mood.
 
 **Preferred:**
 ```markdown
