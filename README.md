@@ -10,6 +10,10 @@ These guidelines are based on [Building a strong community Github documentation]
 	* [Multiple Issue Templates Over Single Issue Template](#multiple-issue-template-over-single-issue-template)
 	* [Issue & Pull Request Expectation](#issue--pull-request-expectation)
 	* [Promoting A High Contribution Quality](#promoting-a-high-contribution-quality)
+* [Git Commit Messages](#git-commit-messages)
+	* [Short Commit Messages](#short-commit-messages)
+	* [Issue Reference](#issue-reference)
+	* [Commit Nature](#commit-nature)
 * [Milestone](#milestone)
 	* [Incremental Title](#incremental-title)
 	* [Short Iterative Due Date](#short-iterative-due-date)
@@ -95,6 +99,59 @@ Templates should promote a high contribution quality by referring [contributing 
 
 ...
 ```
+
+## Git Commit Messages
+
+Git commit messages should help reviewers to do better reviews.
+
+### Short Commit Messages
+
+Short commit messages should help reviewers to quickly understand what has been done. It should be short, clear and written at the present tense and imperative mood.
+
+**Preferred:**
+```markdown
+- Add get user feature.
+- Update navigation storyboard.
+```
+
+**Not Preferred:**
+```markdown
+- Added get user feature.
+- Updates navigation storyboard.
+```
+
+### Issue Reference
+
+Referencing issue in git commit messages should help anyone to track progress on a specific issue. Git commit messages should always reference issues at the end.
+
+**Preferred:**
+```markdown
+- Improve cache management. Related to #42.
+- Remove unused ViewController method. Related to #1024.
+```
+
+**Not Preferred:**
+```markdown
+- Improve cache management.
+- #1024 Remove unused ViewController method.
+```
+
+### Commit Nature
+
+Emojis should help reviewers to quickly and visually identify the nature of the commit. For clear visual identification start the commit message with an applicable emoji:
+
+- :art: `:art:` when improving the format/structure of the code
+- :racehorse: `:racehorse:` when improving performance
+- :non-potable_water: `:non-potable_water:` when plugging memory leaks
+- :memo: `:memo:` when writing docs
+- :bug: `:bug:` when fixing a bug
+- :fire: `:fire:` when removing code or files
+- :green_heart: `:green_heart:` when fixing the CI build
+- :white_check_mark: `:white_check_mark:` when adding tests
+- :lock: `:lock:` when dealing with security
+- :arrow_up: `:arrow_up:` when upgrading dependencies
+- :arrow_down: `:arrow_down:` when downgrading dependencies
+- :shirt: `:shirt:` when removing linter warnings
 
 ## Milestone
 
@@ -256,3 +313,5 @@ Type of change labels are only used for pull requests. They give information abo
 - [The Official raywenderlich.com Swift Style Guide](https://github.com/raywenderlich/swift-style-guide/blob/master/README.markdown).
 - [Sane GitHub Labels](https://medium.com/@dave_lunny/sane-github-labels-c5d2e6004b63).
 - [GitHub Labels and Milestones](https://docs.saltstack.com/en/2017.7/topics/development/labels.html).
+
+- [Atom CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
