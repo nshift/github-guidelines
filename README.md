@@ -26,6 +26,11 @@ These guidelines are based on [Building a strong community Github documentation]
 		* [Severity](#severity)
 		* [Type Of Change](#type-of-change)
 * [CHANGELOG](#changelog)
+	* [Guiding principles](#guiding-principles)
+	* [Milestones And Changelog](#milestones-and-changelog)
+	* [Pull Requests And Changelog](#pull-requests-and-changelog)
+		* [Pull Request Line Formatting](#pull-request-line-formatting)
+		* [Keywords](#keywords)
 * [CONTRIBUTING.md](#contributingmd)
 * [Resources](#resources)
 
@@ -312,6 +317,96 @@ Type of change labels are only used for pull requests. They give information abo
 
 ## CHANGELOG
 
+A Changelog allows everyone to see precisely every changes and new features delivered over time in a project. It gives a great view of the chronology of all the increments made to the project. 
+A Changelog should be kept in a `CHANGELOG.md` file at the root of your repository. It should begin with a quick sentence to give the file a context.
+
+**Preferred:**
+```markdown
+Changelog
+
+All notable changes to this project will be documented in this file.
+
+[0.19.0] - 2018/04/20
+```
+
+**Not Preferred:**
+```markdown
+Changelog
+
+[0.19.0] - 2018/04/20
+```
+
+
+### Guiding principles
+
+The following principles define guiding principles of what is a good changelog.
+
+- Changelogs are for humans, not machines.
+- Each entry should correspond to a new version.
+- The same types of changes should be grouped.
+- The latest version comes first.
+- The release date of each versions is displayed.
+- Add PR number and a GitHub tag at the end of each entry.
+
+### Milestones And Changelog
+
+Milestones should be used to automatically generate a Changelog. Everytime a Milestone is closed, a Changelog should be generated. Every Milestone should be a section in the Changelog. A Changelog section should have the following format :
+
+**Format**
+```markdown
+[Milestone Number] - YYYY/MM/DD
+```
+
+**Preferred:**
+```markdown
+[1.6.2] - 2018/06/01
+```
+
+**Not Preferred:**
+```markdown
+01/06/2018, Milestone 1.6.2
+```
+```markdown
+MyAPP 1.2 - 1 Jun. 2018
+```
+
+### Pull Requests And Changelog
+
+Every entry of a Changelog should be a merged pull request.
+
+#### Pull Request Line Formatting
+
+To facilitate automated generation of a changelog, each pull request should have a Changelog section with at least one changelog line. Each of these lines should start with `cl:` followed by the corresponding Changelog keyword and changes description.
+
+**Preferred:**
+```markdown
+cl: Added address autocompletion on destination research.
+```
+
+**Not Preferred:**
+```markdown
+cl: Add address autocompletion.
+```
+
+```markdown
+- cl: Added address autocompletion on destination research.
+```
+
+```markdown
+Added address autocompletion on destination research.
+```
+
+#### Keywords
+
+Here is the list the keywords to use for a complete changelog:
+
+- `Added` for new features.
+- `Changed` for changes in existing functionality.
+- `Deprecated` for soon-to-be removed features.
+- `Removed` for now removed features.
+- `Fixed` for any bug fixes.
+- `Security` in case of vulnerabilities.
+
 ## CONTRIBUTING.md
 
 ## Resources
@@ -319,5 +414,7 @@ Type of change labels are only used for pull requests. They give information abo
 - [The Official raywenderlich.com Swift Style Guide](https://github.com/raywenderlich/swift-style-guide/blob/master/README.markdown).
 - [Sane GitHub Labels](https://medium.com/@dave_lunny/sane-github-labels-c5d2e6004b63).
 - [GitHub Labels and Milestones](https://docs.saltstack.com/en/2017.7/topics/development/labels.html).
-
-- [Atom CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
+- [Atom CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md).
+- [Atom CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md).
+- [Keep A Changelog](https://keepachangelog.com/en/1.0.0/).
+- [Moya GitHub Changelog](https://github.com/Moya/contributors/blob/master/Changelog%20Guidelines.md).
