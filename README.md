@@ -314,10 +314,77 @@ Type of change labels are only used for pull requests. They give information abo
 
 ## CONTRIBUTING.md
 
+Every GitHub repository must have a CONTRIBUTING.md file. It allows maintainers to expose the project's context and contributing guidelines.
+
+### Before I Get Started
+
+A good CONTRIBUTING.md should make any contributor feel comfortable to get his hands on the project. Therefore, it is imperative to give an overview of your project. The first thing that should appear in this file is a `Before I Get Started` section. This section aims at exposing the project's scope, its files organisation, dependencies and information about design.
+
+First, the scope should be about how the project was defined, meaning what kind of project you have to deal with. Is it a regular application? Is it an SDK? Is it using a specific technology? etc.
+
+The section should desribe briefly the files organisation to help the contributor understand where to look for what he wants or where to add a file.
+
+Then, it should explain to the contributor the dependencies the project has. It means that is should describe all external dependencies that are imported into the project, but also if the project is meant to be used by others.
+
+Finally, it should give some information about the design decisions and link to the `Architectural Decision Records` section of your project.
+
+### How To Contribute
+
+Once the context and scope of the projects are clear, the reader should have information about how to contribute to the project, depending on the type of task he wants to do. Each type of tasks needs to have a context, some information about what to do before that type of thask and finally how to contribute to such task. 
+
+There are three types of contribution possible: bug report, suggesting a new feature, suggesting a technical enhancement.
+
+
+#### Before Contributing
+
+Before anything else a contributor must be told to do at least two things :
+
+- Determine which repository the task should be done in
+- Check if a an issue is already open about this task
+
+#### Contributing
+
+For any contribution to be efficient, guidelines need to be set in order to always have the needed informations.
+
+A contribution should always be tracked as a GitHub issue. Those issues should be created using a [Template](https://github.com/ExcelsiorFamily/github-guidelines/blob/master/Templates/ISSUE_TEMPLATE/).
+
+#### Pull Requests
+
+Contributors should be informed and guided by templates on how to create pull requests for their work. See [Pull Requests Template](#issue--pull-request-template) section for more information about this.
+
+### Styleguides
+
+The Styleguides section should give information about the project's overall styleguide. This means it should give styling recommendations about :
+- Git commits
+- Coding
+- Documentation
+
+It should contain clear guidelines and link to more complete documention and/or examples.
+
+
+### Issue And Pull Request Labels
+
+The final section to be in the CONTRIBUTING.md should be about issues and pull requests labels to allow anyone to use them properly when contributing but also to identify them properly when looking for information. It should be stored inside a table for more readability.
+
+
+**Preferred:**
+```markdown
+| Label name | Description |
+| --- | --- |
+| `Type: Feature` | The issue is the development of a new feature of your project |
+| `Type: Bug` | The issue is an identified bug that needs to be fixed |
+```
+
+**Not Preferred:**
+```markdown
+- `Feature`: new feature of a project
+- `Bugs`: identified bug that needs to be fixed
+```
+
+
 ## Resources
 
 - [The Official raywenderlich.com Swift Style Guide](https://github.com/raywenderlich/swift-style-guide/blob/master/README.markdown).
 - [Sane GitHub Labels](https://medium.com/@dave_lunny/sane-github-labels-c5d2e6004b63).
 - [GitHub Labels and Milestones](https://docs.saltstack.com/en/2017.7/topics/development/labels.html).
-
-- [Atom CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
+- [Atom CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md).
