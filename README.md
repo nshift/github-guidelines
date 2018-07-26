@@ -146,7 +146,9 @@ Referencing issue in git commit messages should help anyone to track progress on
 
 Emojis should help reviewers to quickly and visually identify the nature of the commit. For clear visual identification start the commit message with an applicable emoji:
 
+- :computer: `:computer:` when writing new lines of code
 - :art: `:art:` when improving the format/structure of the code
+- :construction-worker: `:construction-worker:` when improving the format/structure of the project
 - :racehorse: `:racehorse:` when improving performance
 - :non-potable_water: `:non-potable_water:` when plugging memory leaks
 - :memo: `:memo:` when writing docs
